@@ -34,5 +34,11 @@ rockButton.addEventListener('click', () => {
     computerChoiceElement.textContent = `The computer chose: ${computerChoice}`;
     resultElement.textContent = result;
 });
-
+//click event handler for paper button
+paperButton.addEventListener('click', () => {
+    const computerChoice = getComputerChoice();
+    const result = determineWinner('paper', computerChoice);
+    computerChoiceElement.textContent = `The computer chose: ${computerChoice}`;
+    resultElement.textContent = result;
+});
 

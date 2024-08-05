@@ -20,6 +20,9 @@
    background-color: #fff;
    cursor: pointer;
    transition: background-color 0.2s ease-in-out;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   animation: pulse 2s infinite;
+
 }
 button:hover{
    background-color: #ccc;
@@ -31,3 +34,69 @@ button:hover{
    font-weight: bold;
  }
 
+ .result{
+   font-size: 36px;
+   font-weight: bold;
+   color: #666;
+ }
+
+/*Shadow Effects*/
+.game-space{
+   background-image: linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulse {
+   0% {
+     transform: scale(1);
+   }
+   50% {
+     transform: scale(1.1);
+   }
+   100% {
+     transform: scale(1);
+   }
+ }
+ 
+ 
+ /* Media queries for responsive design */
+ /* Mobile devices (max-width: 480px) */
+ @media only screen and (max-width: 480px) {
+    nav ul {
+       flex-direction: column;
+    }
+ 
+    nav li {
+       margin-right: 0;
+    }
+    /* CSS to style the audio element */
+ audio {
+    width: 90%;
+    margin-top: 20px;
+ }
+ 
+ 
+    section {
+       width: 100%;
+       /* full width for mobile */
+    }
+ }
+ 
+ /* Tablet devices (max-width: 768px) */
+ @media only screen and (max-width: 768px) {
+    nav ul {
+       flex-direction: column;
+    }
+ 
+    nav li {
+       margin-right: 0;
+    }
+    audio {
+       width: 90%;
+       margin-top: 20px;
+    }
+ 
+    section {
+       width: 90%;
+    }
+ }
