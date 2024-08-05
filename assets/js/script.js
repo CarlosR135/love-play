@@ -41,4 +41,14 @@ paperButton.addEventListener('click', () => {
     computerChoiceElement.textContent = `The computer chose: ${computerChoice}`;
     resultElement.textContent = result;
 });
+//click event handler for scissors button
+scissorsButton.addEventListener('click', () => {
+    const computerChoice = getComputerChoice();
+    const result = determineWinner('scissors', computerChoice);
+    computerChoiceElement.textContent = `The computer chose: ${computerChoice}`;
+    resultElement.textContent = result;
+});
+
+
+
 
