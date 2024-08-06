@@ -1,7 +1,7 @@
 .game-space {
    background-color: #f0f0f0;
-   padding: 20px;
-   border-radius: 30px;
+   padding: 50px;
+   border-radius: 50px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    text-align: center;
  }
@@ -11,7 +11,20 @@
    justify-content: space-between;
    margin-bottom: 20px;
  }
- 
+ .instructs-space{
+   background-color: #934;
+ }
+ .instructs{
+   font-family: Arial, sans-serif;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+ }
  button {
    width: 100px;
    height: 100px;
