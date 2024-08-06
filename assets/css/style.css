@@ -5,16 +5,18 @@
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    text-align: center;
  }
- 
+ .top-image{
+   transform: scale(0.5);
+
+ }
  .player-choice {
    display: flex;
    justify-content: space-between;
    margin-bottom: 20px;
  }
+ 
  .instructs-space{
    background-color: #934;
- }
- .instructs{
    font-family: Arial, sans-serif;
    text-align: center;
    margin: 0;
@@ -23,8 +25,19 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 100vh;
- }
+   height: 15vh;
+   }
+
+ ul {
+   list-style-type: disc;
+   padding-left: 0;
+   display: inline-block;
+   text-align: left;
+}
+li {
+   margin: 10px 0;
+}
+ 
  button {
    width: 100px;
    height: 100px;
