@@ -39,6 +39,7 @@ body{
    justify-content: center;
    align-items: center;
    height: 15vh;
+   border-radius: 50px;
    }
 
  ul {
@@ -73,6 +74,7 @@ li {
  button#rock{
    background-color: #ff2289;
  }
+ 
  button#paper{
    background-color: #4caf50;
  }
@@ -134,6 +136,13 @@ li {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.game-space img{
+   width: 325px;
+   height: 160px;
+   border-radius: 50px;
+}
+
+
 @keyframes pulse {
    0% {
      transform: scale(1);
@@ -157,9 +166,7 @@ li {
       width:80px;
       height:80px;
    }
-   .top-image{
-      width:90%;
-   }
+   
    nav ul {
        flex-direction: column;
     }
@@ -167,20 +174,9 @@ li {
     nav li {
        margin-right: 0;
     }
-    /* CSS to style the audio element */
- audio {
-    width: 90%;
-    margin-top: 20px;
- }
- 
- 
-    section {
-       width: 100%;
-       /* full width for mobile */
-    }
- }
- 
- /* Tablet devices (max-width: 768px) */
+    
+   }
+   /* Tablet devices (max-width: 768px) */
  @media only screen and (max-width: 768px) {
     nav ul {
        flex-direction: column;
@@ -189,12 +185,5 @@ li {
     nav li {
        margin-right: 0;
     }
-    audio {
-       width: 90%;
-       margin-top: 20px;
-    }
- 
-    section {
-       width: 90%;
-    }
- }
+   
+   }
