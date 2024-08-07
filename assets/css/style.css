@@ -158,8 +158,12 @@ li {
  
  /* Media queries for responsive design */
  /* Mobile devices (max-width: 480px) */
- @media only screen and (max-width: 480px) {
-   ul.instructs{
+ @media only screen and (max-width: 300px) {
+   body{
+    font-size: 14px;
+   }
+  
+  ul.instructs{
       padding-left: 10px;
    }
    button{

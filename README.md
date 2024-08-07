@@ -41,6 +41,12 @@ Enjoy playing Rock, Paper, Scissors against the computer, and see if you can out
 - In this application, the user can play the classic Rock, Paper, Scissors game on their screen. I believe it will spark curiosity and the desire to achieve victory.
 - This game is open to all types of audiences.
 
+# Design
+
+
+
+
+
 
 
 
