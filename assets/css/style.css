@@ -155,39 +155,40 @@ li {
    }
  }
  
- 
- /* Media queries for responsive design */
- /* Mobile devices (max-width: 480px) */
- @media only screen and (max-width: 300px) {
-   body{
-    font-size: 14px;
-   }
+ @media only screen and (max-width: 480px) {
+  .game-space {
+    min-width: 100vw;
+    transform: scale(2);
+    padding: 20px;
+    margin: 10px;
+  }
   
-  ul.instructs{
-      padding-left: 10px;
-   }
-   button{
-      width:80px;
-      height:80px;
-   }
-   
-   nav ul {
-       flex-direction: column;
-    }
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Tablet devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .game-space {
+    padding: 30px;
+  }
+  
+  .instructs-space {
+    height: 12vh;
+  }
+  
+  button {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .computer-choice {
+    font-size: 24px;
+  }
+  
+  .result {
+    font-size: 36px;
+  }
+}
  
-    nav li {
-       margin-right: 0;
-    }
-    
-   }
-   /* Tablet devices (max-width: 768px) */
- @media only screen and (max-width: 768px) {
-    nav ul {
-       flex-direction: column;
-    }
- 
-    nav li {
-       margin-right: 0;
-    }
-   
-   }
