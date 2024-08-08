@@ -2,7 +2,7 @@
 
 Rock, Paper, Scissors is a classic hand game often used to make decisions or as a simple game of chance. This project features an implementation of Rock, Paper, Scissors where you play against the computer.
 
-IMAGEMMMMMMMMMMMMMMMMMMMMM
+![Multiple Devices](/assets/images/image1.jpeg)
 
 
 
@@ -54,6 +54,26 @@ I used the following colors:
 - #2196f3;
 - #ccc;
 - rgba(0, 0, 0, 0.2);
+
+# Home Screen
+
+Here we have our main screen where the user can intuitively make their choice and have fun with the computer.
+
+# Desktop Scream
+![Desktop Screem](/assets/images/image2.png)   
+
+
+
+# Ipad Scream
+![Ipad Scream](/assets/images/ipad.PNG)
+
+# HTML Validation
+The HTML code has been run through the W3C - HTML validator. Results can be found below.
+
+![W£CHtMl validation]()
+
+
+
 
 
 
