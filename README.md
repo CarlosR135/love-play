@@ -104,6 +104,85 @@ W3C Markup Validation Service: A tool provided by the World Wide Web Consortium 
 W3C CSS Validation Service: A tool provided by W3C to validate CSS code. It helps in identifying errors and potential issues in the stylesheet, ensuring it adheres to CSS standards.
 
 
+## Code Explanation
+
+Here's a breakdown of the JavaScript code used in this project:
+
+## Essential Constants
+
+
+const rockButton = document.getElementById('rock');
+const paperButton = document.getElementById('paper');
+const scissorsButton = document.getElementById('scissors');
+const computerChoiceElement = document.getElementById('computer-choice');
+const resultElement = document.getElementById('result');
+
+
+1. These constants store references to the Rock, Paper, Scissors buttons and elements where the computer's choice and the result will be displayed.
+
+function getComputerChoice() {
+    const choices = ['rock', 'paper', 'scissors'];
+    return choices[Math.floor(Math.random() * choices.length)];
+}
+
+
+2. This function randomly selects one of the choices ('rock', 'paper', or 'scissors') for the computer.
+
+# Function to Determine the Winner
+
+function determineWinner(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        return 'Tied!';
+    }
+    if (playerChoice === 'rock' && computerChoice === 'scissors') {
+        return 'You won!';
+    }
+    if (playerChoice === 'paper' && computerChoice === 'rock') {
+        return 'You won!';
+    }
+    if (playerChoice === 'scissors' && computerChoice === 'paper') {
+        return 'You won!';
+    }
+    return 'You lost!';
+}
+
+3. This function compares the player's choice with the computer's choice and returns the result of the game. Note: there is a small issue in the original code where 'scissors' vs 'paper' was incorrectly returning 'You lost!'. This has been corrected to 'You won!'.
+
+# Event Handlers for Buttons
+
+rockButton.addEventListener('click', () => {
+    const computerChoice = getComputerChoice();
+    const result = determineWinner('rock', computerChoice);
+    computerChoiceElement.textContent = `The computer chose: ${computerChoice}`;
+    resultElement.textContent = result;
+});
+
+paperButton.addEventListener('click', () => {
+    const computerChoice = getComputerChoice();
+    const result = determineWinner('paper', computerChoice);
+    computerChoiceElement.textContent = `The computer chose: ${computerChoice}`;
+    resultElement.textContent = result;
+});
+
+scissorsButton.addEventListener('click', () => {
+    const computerChoice = getComputerChoice();
+    const result = determineWinner('scissors', computerChoice);
+    computerChoiceElement.textContent = `The computer chose: ${computerChoice}`;
+    resultElement.textContent = result;
+});
+
+
+4. These event handlers are attached to each button. When a button is clicked, the computer's choice is generated, the winner is determined, and the results are displayed.
+
+
+
+
+
+## Thank you for wacth my project!
+
+
+
+
 
 
 

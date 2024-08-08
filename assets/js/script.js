@@ -22,7 +22,7 @@ function determineWinner(playerChoice, computerChoice) {
         return 'You won!';
     }
     if (playerChoice === 'scissors' && computerChoice === 'paper') {
-        return 'You lost!';
+        return 'You won!';
     }
 
     return 'You lost!';
