@@ -70,7 +70,39 @@ Here we have our main screen where the user can intuitively make their choice an
 # HTML Validation
 The HTML code has been run through the W3C - HTML validator. Results can be found below.
 
-![W£CHtMl validation]()
+![W£CHtMl validation](/assets/images/Capturar.PNG)
+
+# CSS Validation
+
+The CSS code has been run through the W3C - CSS validator. Results can be found below.
+
+![JIgashaw validator](/assets/images/imagem22.PNG)
+
+# Techologies
+
+This website is developed using the following technologies:
+
+HTML: For structuring the content and layout of the web pages.
+
+CSS: For styling the website and making it visually appealing.
+
+JavaScript: For adding interactivity and dynamic features to the website.
+
+
+# Tools Used
+
+This website is developed using the following tools:
+
+GitHub: Used for version control and code storage. GitHub allows for collaborative development, issue tracking, and code review, ensuring a smooth workflow and version management.
+
+VS Code: Integrated Development Environment (IDE) used to write, edit, and debug code. VS Code supports numerous extensions that enhance productivity, such as Git integration, syntax highlighting, and linting tools.
+
+Google DevTools: A set of web developer tools built directly into the Google Chrome browser. Google DevTools provides features for debugging, editing CSS and HTML on the fly, and analyzing website performance.
+
+W3C Markup Validation Service: A tool provided by the World Wide Web Consortium (W3C) to validate HTML and XHTML documents. This service checks for errors in the markup to ensure compliance with web standards.
+
+W3C CSS Validation Service: A tool provided by W3C to validate CSS code. It helps in identifying errors and potential issues in the stylesheet, ensuring it adheres to CSS standards.
+
 
 
 
