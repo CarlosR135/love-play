@@ -43,6 +43,18 @@ Enjoy playing Rock, Paper, Scissors against the computer, and see if you can out
 
 # Design
 
+I used the following colors:
+
+- #009688;
+- #f0f0f0;
+- rgba(170, 226, 193, 0.815);
+- #ffffff;
+- #ff2289;
+- #4caf50;
+- #2196f3;
+- #ccc;
+- rgba(0, 0, 0, 0.2);
+
 
 
 

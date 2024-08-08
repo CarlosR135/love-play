@@ -154,17 +154,20 @@ li {
      transform: scale(1);
    }
  }
- 
+ /* Mobile devices (max-width: 480px) */
  @media only screen and (max-width: 480px) {
-  .game-space {
-    min-width: 100vw;
-    transform: scale(2);
-    padding: 20px;
-    margin: 10px;
+  body {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    font-size: 18px;
+    height: 100vh;
   }
   
-  body {
-    font-size: 18px;
+  .game-space {
+    padding: 20px;
+    transform: scale(1.2);
+    
   }
 }
 
