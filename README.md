@@ -67,6 +67,10 @@ Here we have our main screen where the user can intuitively make their choice an
 # Ipad Scream
 ![Ipad Scream](/assets/images/ipad.PNG)
 
+# JavaScript Validator
+
+![Java Scipt Validator](/assets/images/javalidator.png)
+
 # HTML Validation
 The HTML code has been run through the W3C - HTML validator. Results can be found below.
 
@@ -110,7 +114,7 @@ Here's a breakdown of the JavaScript code used in this project:
 
 ## Essential Constants
 
-
+```
 const rockButton = document.getElementById('rock');
 const paperButton = document.getElementById('paper');
 const scissorsButton = document.getElementById('scissors');
@@ -124,12 +128,12 @@ function getComputerChoice() {
     const choices = ['rock', 'paper', 'scissors'];
     return choices[Math.floor(Math.random() * choices.length)];
 }
-
+```
 
 2. This function randomly selects one of the choices ('rock', 'paper', or 'scissors') for the computer.
 
 # Function to Determine the Winner
-
+```javasript
 function determineWinner(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         return 'Tied!';
@@ -145,11 +149,13 @@ function determineWinner(playerChoice, computerChoice) {
     }
     return 'You lost!';
 }
-
+```
 3. This function compares the player's choice with the computer's choice and returns the result of the game. Note: there is a small issue in the original code where 'scissors' vs 'paper' was incorrectly returning 'You lost!'. This has been corrected to 'You won!'.
 
 # Event Handlers for Buttons
 
+
+```
 rockButton.addEventListener('click', () => {
     const computerChoice = getComputerChoice();
     const result = determineWinner('rock', computerChoice);
@@ -170,6 +176,7 @@ scissorsButton.addEventListener('click', () => {
     computerChoiceElement.textContent = `The computer chose: ${computerChoice}`;
     resultElement.textContent = result;
 });
+```
 
 
 4. These event handlers are attached to each button. When a button is clicked, the computer's choice is generated, the winner is determined, and the results are displayed.
